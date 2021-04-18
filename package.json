@@ -1,0 +1,22 @@
+{
+  "name": "tailwind_test",
+  "version": "1.0.0",
+  "description": "Just test",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "npm-watch": "^0.9.0",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "TAILWIND_MODE=watch NODE_ENV=development postcss ./css/app.css -o ./assets/tailwind.css -w",
+    "build:dev": "TAILWIND_MODE=build NODE_ENV=development postcss ./css/app.css -o ./assets/tailwind.css",
+    "build:prod": "TAILWIND_MODE=build NODE_ENV=production postcss ./css/app.css -o ./assets/tailwind.css"
+  },
+  "author": "",
+  "license": "MIT"
+}
